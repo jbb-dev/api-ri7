@@ -17,10 +17,6 @@
   },
   "production": {
     "use_env_variable" : "JAWSDB_URL",
-    "password": "s8@%0oui23sLso",
-    "database": "ri7",
-    "host": "127.0.0.1",
-    "dialect": "mysql",
-    "operatorsAliases": false
+    "dialect": "mysql"
   }
 }
