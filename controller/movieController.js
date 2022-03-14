@@ -42,7 +42,8 @@ module.exports = {
                             title,
                             overview,
                             release_date,
-                            poster_path
+                            poster_path,
+                            userId: id
                         })
                         .then(movie =>res.status(200).json(movie))
                         .catch(err => res.status(500).json(`erreur : Impossible de créer le film => ${err}`))
