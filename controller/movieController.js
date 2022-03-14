@@ -16,14 +16,14 @@ module.exports = {
         let title = req.body.title
         let overview = req.body.overview
         let release_date = req.body.release_date;
-        let image = req.body.image
+        let poster_path = req.body.poster_path
 
         console.log(req.body)
         // Verify required params 
         if (title == null || title.length < 1 || 
             overview == null || overview.length < 1 ||
             release_date == null  || release_date.length < 1 ||
-            image == null || image.length < 1)
+            poster_path == null || poster_path.length < 1)
         {
             return res.status(400).json(`erreur : des paramètres sont manquants`)
         }
@@ -42,7 +42,7 @@ module.exports = {
                             title,
                             overview,
                             release_date,
-                            image
+                            poster_path
                         })
                         .then(movie =>res.status(200).json(movie))
                         .catch(err => res.status(500).json(`erreur : Impossible de créer le film => ${err}`))

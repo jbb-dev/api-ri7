@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
             type : DataTypes.DATE,
         },
 
-        image : {
+        poster_path : {
             type : DataTypes.STRING,
         },
 
