@@ -20,6 +20,11 @@ module.exports = (sequelize, DataTypes) => {
             type : DataTypes.STRING,
         },
 
+        isCustom : {
+            type : DataTypes.BOOLEAN,
+            defaultValue : true,
+        },
+
     }, {});
 
     Movie.associate = models => {
